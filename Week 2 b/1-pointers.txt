@@ -1,0 +1,97 @@
+📌 POINTERS & RELATED CONCEPTS (Easy Notes)
+1. & (Address of operator)
+& gives the memory address of a variable.
+Example:
+int a = 10;
+cout << &a;
+Meaning:
+It prints where a is stored in memory.
+2. * (Dereference operator)
+* is used to get the value at an address.
+Example:
+int a = 10;
+int *p = &a;
+
+cout << *p;
+Meaning:
+Go to the address stored in p and take the value.
+3. Pointer
+A pointer is a variable that stores the address of another variable.
+Example:
+int a = 10;
+int *p = &a;
+Important:
+Pointer also has its own memory address.
+4. Pointer to Pointer
+A pointer that stores the address of another pointer.
+Example:
+int a = 10;
+int *p = &a;
+int **pp = &p;
+
+cout << **pp; // value of a
+Meaning:
+pp → p → a
+5. Dereferencing
+Means: going to an address and accessing the value inside it
+Example:
+int a = 10;
+int *p = &a;
+
+cout << *p;  // 10
+6. Pass by Value
+A copy of the variable is sent to the function.
+Original value does NOT change.
+Example:
+void fun(int x){
+    x = x + 10;
+}
+7. Pass by Reference
+Original variable is passed.
+Changes affect the original value.
+Example:
+void fun(int &x){
+    x = x + 10;
+}
+8. Pass by Pointer
+Address is passed to function.
+Example:
+void fun(int *p){
+    *p = *p + 10;
+}
+
+int main(){
+    int a = 10;
+    fun(&a);
+}
+9. Array as Pointer
+Array name behaves like a pointer to first element.
+Example:
+int arr[] = {10, 20, 30};
+
+cout << arr;      // address of arr[0]
+cout << *arr;     // 10
+Important:
+arr == &arr[0]
+10. Pointer Arithmetic
+Moving pointer means moving in memory based on data type size.
+Example:
+int arr[] = {10, 20, 30};
+
+int *p = arr;
+
+cout << *(p + 1); // 20
+cout << *(p + 2); // 30
+Meaning:
+p + 1 = move to next integer (not +1 byte, but +4 bytes usually)
+⚡ FINAL SIMPLE SUMMARY
+& → gives address
+* → gives value at address
+pointer → stores address
+pointer to pointer → stores pointer’s address
+dereference → access value using address
+pass by value → copy
+pass by reference → original change
+pass by pointer → change using address
+array → works like pointer
+pointer arithmetic → moves in memory based on data type size

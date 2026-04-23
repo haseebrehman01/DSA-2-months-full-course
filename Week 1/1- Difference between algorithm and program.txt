@@ -1,0 +1,31 @@
+🔹 Algorithm
+An algorithm is a step-by-step logical procedure to solve a problem.
+It is independent of any programming language.
+Used in the design/planning phase.
+Can be written in:
+Simple English
+Pseudocode
+Flowcharts
+Mathematical notation (preferred for precision)
+Anyone with problem/domain knowledge can write it (not necessarily a programmer).
+Focus is on:
+Logic
+Efficiency (time/space complexity)
+Not dependent on hardware/software.
+
+👉 Key idea: “What steps should be followed?”
+
+🔹 Program
+A program is the implementation of an algorithm using a programming language.
+It is language-dependent (C++, JavaScript, Python, etc.).
+Written by a programmer/developer.
+Used in the execution phase.
+Must follow:
+Syntax rules
+Language constraints
+Requires:
+Compilation/interpretation
+Testing & debugging
+Can be affected by hardware/software environment.
+
+👉 Key idea: “How to execute those steps on a computer?”

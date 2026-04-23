@@ -1,0 +1,69 @@
+A Priori Analysis (Before Execution)
+
+anlysing algorith before impplement
+
+Key Points: 
+Done theoretically (on paper)
+Does not require a program
+
+uses : 
+space complexity
+time complexity (Big o , eg o (n) , 0 (log n))
+
+does not require 
+Machine
+Compiler
+Programming language
+
+👉 Focus: “How efficient is this algorithm logically?”
+
+Example:
+
+If you have a loop running n times →
+You say: Time Complexity = O(n)
+
+
+🔹 A Posteriori Analysis (After Execution)
+analyses of an  algorith after  implementing 
+
+key points 
+done practically through programming language 
+require a program 
+Requires:
+
+Coding
+Testing
+
+Measures:
+actual running time 
+Memory usage
+Depends on:
+
+Hardware (CPU, RAM)
+Compiler
+Input size
+
+👉 Focus: “How does it perform in real conditions?”
+
+⚖️ Direct Difference
+| Feature              | A Priori            | A Posteriori      |
+| -------------------- | ------------------- | ----------------- |
+| Timing               | Before execution    | After execution   |
+| Type                 | Theoretical         | Practical         |
+| Need program?        | ❌ No                | ✅ Yes             |
+| Depends on hardware? | ❌ No                | ✅ Yes             |
+| Accuracy             | Approximate (Big O) | Real measurements |
+
+🔥 Simple Analogy (easy yaad rehne ke liye)
+A Priori = Recipe dekh ke guess karna ke dish tasty hogi ya nahi
+A Posteriori = Dish bana ke taste karna
+
+
+💡 One-line exam answer
+A Priori Analysis: Theoretical analysis of an algorithm before execution using time and space complexity.
+A Posteriori Analysis: Practical analysis after implementation by running the program and measuring performance.
+
+
+
+
+

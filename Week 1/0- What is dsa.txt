@@ -1,0 +1,22 @@
++ DSA: Combination of data structures and algorithms used to efficiently store and process data.
+
++ Data Structure: Method of organizing data in memory.
+ Examples:
+Array
+Linked List
+Stack
+Queue
+Tree
+Graph
+
++ Algorithm: Step-by-step procedure to solve a problem.
+
+Characteristics:
+Finite steps
+Clear instructions
+Input → Process → Output
+
++ Simple Analogy (yaad rehne ke liye)
+Data Structure = Kitchen (ingredients arranged)
+Algorithm = Recipe (steps to cook)
+DSA = Cooking system 🔥

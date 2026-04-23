@@ -1,0 +1,74 @@
+Time Complexity :
+Def : not the actual time taken (like 1 sec, 0.5 sec) but amount of time taken as a function of input size (n).
+"as a function of input size (n)"
+this just means — as n changes, what happens?
+Time complexity is not actual time — it is steps. and fewer steps = better algorithm.
+
+Why we say "steps" instead of "time" :
+because actual time depends on many things —
+
+how fast your PC is
+how much RAM you have
+what language you used
+
+but steps never change. steps are always the same no matter what machine you run it on.
+so we compare algorithms using steps, not seconds.
+
+say you want to find a number in an array of 1000 elements.
+
+Algorithm A — checks every element one by one → 1000 steps → slow
+Algorithm B — uses binary search → only 10 steps → fast
+
+same problem, same input, but Algorithm B is better because fewer steps.
+
+Why to use ? to check which algorithm is better as n gets bigger and bigger. to find the faster algorithm. we check time complexity to avoid worst case scenarios.
+Simplification Rules :
+if we have a function f(n) = 3n² + 2n + 1
+
+ignore constants (3, 2) and ignore standalone numbers (1)
+now we have → n² + n
+choose the biggest term, ignore the others
+now we have → n² → O(n²)
+
+
+Space Complexity :
+Def : not the actual memory used (like 4MB, 512KB) but the amount of memory an algorithm needs as a function of input size (n).
+Why to use ? because some algorithms are fast but use too much memory — which can crash a system. we need to check both time AND space to pick the best algorithm.
+Same simplification rules apply — drop constants, keep the biggest term.
+What counts as space ?
+
+variables you declare → int x = 5
+arrays or lists you create → int arr[n]
+recursive call stack → each function call takes space
+input storage (sometimes counted, sometimes not)
+
+Examples :
+
+int sum = 0; + a loop → only 2 variables, memory does not grow with n → O(1) — Constant
+int newArr[n]; → memory grows with n → O(n) — Linear
+int matrix[n][n]; → n × n cells → O(n²) — Quadratic
+
+
+Key Point : Time and Space often have a tradeoff. a faster algorithm sometimes uses more memory, and a 
+memory-efficient algorithm is sometimes slower. you need to balance both depending on the situation.
+
+
+Time Complexity in simple words:
+if you have 10 elements → your algorithm does 10 steps
+if you have 100 elements → your algorithm does 100 steps
+if you have 1000 elements → your algorithm does 1000 steps
+so time (steps) depends on n. that dependency is what we measure. that is time complexity.
+
+Space Complexity in simple words:
+if you create an array of 10 elements → you use 10 memory slots
+if you create an array of 100 elements → you use 100 memory slots
+if you create an array of 1000 elements → you use 1000 memory slots
+so memory depends on n. that dependency is what we measure. that is space complexity.
+
+One line summary:
+
+Time complexity = how many steps does my algorithm take when n grows?
+Space complexity = how much memory does my algorithm use when n grows?
+
+Both are just asking the same question — "what happens to my algorithm when n gets bigger?"
+

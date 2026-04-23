@@ -1,0 +1,39 @@
+Notation    Symbol    Case            Also Called
+Big-O       O         Worst Case      Upper Bound
+Theta       θ         Average Case    Tight Bound
+Omega       Ω         Best Case       Lower Bound
+
+
+
+Why Upper Bound and Lower Bound?
+
+Upper Bound (O) → algorithm will never be slower than this. this is the maximum.
+Lower Bound (Ω) → algorithm will never be faster than this. this is the minimum.
+Tight Bound (θ) → sits right in the middle. average behavior.
+
+
+Most Important Point:
+In DSA and interviews, when someone says "what is the time complexity" they almost always mean Big-O (worst case). Theta and Omega are less commonly asked but good to know.
+
+
+
+In urdu : 
+
+used for notation for time complexity
+o(n)  --- means not simple function time complexity (order of )
+give worst case compexity (upper boound)
+o(n)  ---  worst case yeh ka jitna n utna operations . ex array mai 100000 elements jo target hai woh aray ka pehla 
+index mai milgaya toh best case lkn ending mai hua yah last index toh worst qka bhot bara loop chalega
+
+it has three types
+1 - worst case denoted by O (also called upper bound)
+
+2 - avg case denoted by theta 
+
+3 - best case denoted by omega (also called lower bound)
+
+
+
+
+
+
