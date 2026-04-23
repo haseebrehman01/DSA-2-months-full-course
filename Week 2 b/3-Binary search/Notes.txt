@@ -1,0 +1,1 @@
+//In binary search array/string should be sorted
