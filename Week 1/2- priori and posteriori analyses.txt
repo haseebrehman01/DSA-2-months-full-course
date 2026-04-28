@@ -1,6 +1,6 @@
 A Priori Analysis (Before Execution)
 
-anlysing algorith before impplement
+anlysing algorithm before impplement
 
 Key Points: 
 Done theoretically (on paper)
@@ -8,7 +8,7 @@ Does not require a program
 
 uses : 
 space complexity
-time complexity (Big o , eg o (n) , 0 (log n))
+time complexity (Big o , eg o (n) , 0 (log n)) 
 
 does not require 
 Machine
@@ -24,7 +24,7 @@ You say: Time Complexity = O(n)
 
 
 🔹 A Posteriori Analysis (After Execution)
-analyses of an  algorith after  implementing 
+analyses of an  algorithm after  implementing 
 
 key points 
 done practically through programming language 
@@ -35,7 +35,7 @@ Coding
 Testing
 
 Measures:
-actual running time 
+actual running time for ex 2 min , seconds
 Memory usage
 Depends on:
 
