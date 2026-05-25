@@ -1,0 +1,80 @@
+📌 Circular Queue — Notes (DSA)
+🔷 What is a Circular Queue?
+
+A circular queue is a linear data structure in which the last position is connected back to the first position, forming a circle.
+
+Instead of going in a straight line (like a normal queue), it “wraps around” when space is available.
+
+🧠 Key Idea
+
+When rear reaches the end of the array, it can go back to index 0 if space is free.
+
+📊 Structure
+Linear Queue (Normal):
+[10][20][30][  ][  ]
+ front        rear → (stuck at end)
+
+Circular Queue:
+[30][  ][10][20][  ]
+     rear     front
+(reuses empty space)
+⚙️ Basic Operations
+1. Enqueue (Insert)
+Insert at rear
+Then move rear:
+rear = (rear + 1) % size
+2. Dequeue (Delete)
+Remove from front
+Then move front:
+front = (front + 1) % size
+3. Is Full Condition
+
+Queue is full when:
+
+(front == (rear + 1) % size)
+4. Is Empty Condition
+(front == -1 OR front == rear)
+
+(depending on implementation)
+
+🧩 Important Features
+Uses array efficiently
+Avoids wasted space
+Uses modulo (%) for wrap-around
+Fixed size (unless dynamic implementation)
+⚡ Why Circular Queue is different from Linear Queue?
+🔴 Linear Queue Problem
+Once rear reaches end, no more insertion possible
+Even if front has empty space, it is wasted
+
+Example:
+
+[ _ ][ _ ][10][20][30]
+front            rear
+
+Even though space exists, we can't reuse it ❌
+
+🟢 Circular Queue Solution
+Reuses empty space using wrap-around
+No wastage of memory
+
+Example:
+
+After deletions:
+[ _ ][ _ ][10][20][ _ ]
+front        rear
+
+New insert goes to index 0
+📊 Comparison Table
+Feature	Linear Queue	Circular Queue
+Structure	Straight line	Circular (ring)
+Space usage	Inefficient	Efficient
+Overflow	Happens early	Avoided (better use)
+Rear movement	Only forward	Wraps using %
+Memory wastage	Yes	No
+🧠 Real-Life Analogy
+Linear Queue = Bus stop line that ends at wall
+Circular Queue = Running track where you can loop back
+🔥 Key Interview Point
+
+Circular queue solves false overflow problem in linear queue by reusing freed space using modulo arithmetic.

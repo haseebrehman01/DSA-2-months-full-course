@@ -28,7 +28,7 @@ if we have a function f(n) = 3n² + 2n + 1
 ignore constants (3, 2) and ignore standalone numbers (1)
 now we have → n² + n
 choose the biggest term, ignore the others
-now we have → n² → O(n²)
+
 
 
 Space Complexity :

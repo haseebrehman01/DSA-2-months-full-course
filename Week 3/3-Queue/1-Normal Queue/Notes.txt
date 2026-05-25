@@ -1,0 +1,287 @@
+Queue Notes (Data Structures)
+1. Introduction to Queue
+
+A Queue is a linear data structure that follows the FIFO (First In First Out) principle.
+
+The element inserted first is removed first.
+Similar to a real-life queue:
+People standing in line
+Ticket counter
+Printer queue
+Example
+Front → 10 20 30 40 ← Rear
+10 inserted first → removed first
+40 inserted last → removed last
+2. FIFO Principle
+
+Queue works on:
+
+FIFO = First In First Out
+Operations Order
+Insert Order	Remove Order
+A	A
+B	B
+C	C
+3. Basic Terminologies
+Term	Meaning
+Front	First element of queue
+Rear	Last element of queue
+Enqueue	Insert operation
+Dequeue	Delete operation
+Overflow	Queue is full
+Underflow	Queue is empty
+4. Basic Operations of Queue
+(a) Enqueue
+
+Insertion of an element at the rear.
+
+Example
+
+Before:
+
+Front → 10 20 30 ← Rear
+
+Insert 40
+
+After:
+
+Front → 10 20 30 40 ← Rear
+Time Complexity
+O(1)
+(b) Dequeue
+
+Deletion of an element from the front.
+
+Example
+
+Before:
+
+Front → 10 20 30 40 ← Rear
+
+Delete 10
+
+After:
+
+Front → 20 30 40 ← Rear
+Time Complexity
+O(1)
+(c) Peek / Front
+
+Returns the front element without deleting it.
+
+Example
+Queue: 10 20 30
+Front element = 10
+Complexity
+O(1)
+(d) isEmpty()
+
+Checks whether queue is empty.
+
+Complexity
+O(1)
+(e) isFull()
+
+Checks whether queue is full (in array implementation).
+
+Complexity
+O(1)
+5. Queue Representation
+Queue using Array
+Index:   0   1   2   3
+         ----------------
+Queue:   10  20  30  40
+         ----------------
+Front = 0
+Rear  = 3
+6. Queue Operations using Array
+Enqueue Algorithm
+1. Check overflow
+2. Increment rear
+3. Insert element at rear
+Dequeue Algorithm
+1. Check underflow
+2. Remove front element
+3. Increment front
+7. Queue using Linked List
+
+In linked list implementation:
+
+Front points to first node
+Rear points to last node
+Structure
+Front → [10|•] → [20|•] → [30|NULL] ← Rear
+Enqueue in Linked List
+New node inserted at rear
+Complexity
+O(1)
+Dequeue in Linked List
+Node deleted from front
+Complexity
+O(1)
+8. Types of Queue
+(a) Simple Queue
+
+Normal FIFO queue.
+
+Insertion
+
+At rear
+
+Deletion
+
+From front
+
+(b) Circular Queue
+
+Last position connects back to first position.
+
+Used to avoid memory wastage.
+
+Representation
+0 → 1 → 2 → 3
+↑           ↓
+← ← ← ← ← ←
+Condition
+(rear + 1) % size == front
+(c) Priority Queue
+
+Elements are removed based on priority.
+
+Higher priority element removed first.
+
+Example
+Element	Priority
+A	3
+B	1
+C	2
+
+Deletion order:
+
+B → C → A
+(d) Deque (Double Ended Queue)
+
+Insertion and deletion possible from both ends.
+
+Types of Deque
+Input Restricted Deque
+Insertion from one side
+Deletion from both sides
+Output Restricted Deque
+Deletion from one side
+Insertion from both sides
+9. Applications of Queue
+Operating Systems
+CPU Scheduling
+Disk Scheduling
+Printers
+Print queue
+Networking
+Packet handling
+Web Servers
+Request handling
+BFS Traversal
+
+Used in graphs and trees.
+
+Call Centers
+
+Customer waiting systems.
+
+10. Queue Overflow
+
+Occurs when queue becomes full.
+
+Array Condition
+rear == size - 1
+11. Queue Underflow
+
+Occurs when queue is empty.
+
+Condition
+front == -1
+
+OR
+
+front > rear
+12. Advantages of Queue
+Simple and easy
+Efficient insertion/deletion
+Useful in scheduling
+Maintains order
+13. Disadvantages of Queue
+Fixed size in arrays
+Memory wastage in simple array queue
+Searching is slow
+14. Time Complexity Table
+Operation	Complexity
+Enqueue	O(1)
+Dequeue	O(1)
+Peek	O(1)
+Search	O(n)
+15. Queue vs Stack
+Feature	Queue	Stack
+Principle	FIFO	LIFO
+Insertion	Rear	Top
+Deletion	Front	Top
+Example	Line	Plate stack
+16. Real Life Examples
+Queue
+ATM line
+Ticket counter
+Food delivery orders
+Stack
+Browser history
+Undo operation
+17. Important MCQs
+Q1. Queue follows which principle?
+
+Answer:
+
+FIFO
+Q2. Insertion in queue is called?
+
+Answer:
+
+Enqueue
+Q3. Deletion in queue is called?
+
+Answer:
+
+Dequeue
+Q4. Insertion in queue occurs at?
+
+Answer:
+
+Rear
+Q5. Deletion in queue occurs at?
+
+Answer:
+
+Front
+Q6. Which queue allows insertion and deletion from both ends?
+
+Answer:
+
+Deque
+Q7. Time complexity of enqueue and dequeue?
+
+Answer:
+
+O(1)
+18. Short Exam Definitions
+Queue
+
+A queue is a linear data structure that follows FIFO principle where insertion occurs at rear and deletion occurs at front.
+
+Circular Queue
+
+A circular queue is a queue in which last position is connected back to first position.
+
+Priority Queue
+
+A queue in which elements are removed according to priority.
+
+Deque
+
+A double ended queue where insertion and deletion are possible from both ends.
